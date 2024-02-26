@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script src="form.js" defer></script>
+
+    <title>Form</title>
+</head>
+<body>
+    <div class="center">
+        <form action="" id="form" autocomplete="off">
+            <fieldset>
+                <legend>Form</legend>
+                <fieldset>
+                    <legend>Dane osobowe</legend>
+                    <div class="flex-div-main">
+                        <div class="flex-div">
+                            <label for="age">Wiek: </label>
+                            <input type="number" name="age" id="age">
+                        </div>
+
+                        <div class="flex-div">
+                            <label for="name">Imie: </label>
+                            <input type="text" name="name" id="name">
+                        </div>
+
+                        <div class="flex-div">
+                            <label for="forname">Nazwisko: </label>
+                            <input type="text" name="vorname" id="vorname">
+                        </div>
+
+                        <div class="flex-div">
+                            <label for="pearsoncode">Pesel: </label>
+                            <input type="number" name="pearsoncode" id="pearsoncode">
+                        </div>
+
+                        <div class="flex-div">
+                            <label for="email">Email: </label>
+                            <input type="text" name="email" id="email">
+                        </div>
+
+                        <div class="flex-div">
+                            <label for="password">Password: </label>
+                            <input type="password" name="password" id="password">
+                        </div>
+
+                        <div class="flex-div">                            
+                            <label for="phone-number">Numer telefonu: </label>
+                            <input type="number" name="phonenumber" id="phonenumber" placeholder="(+48)">
+                        </div>
+                    </div>
+                    <div id="error-div"></div>
+                </fieldset>
+                <input type="submit" value="Prześlij" id="submit-button">
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+</html>
